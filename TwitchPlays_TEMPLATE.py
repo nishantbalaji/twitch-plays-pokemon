@@ -41,7 +41,7 @@ MESSAGE_RATE = 0.5
 # e.g. if you get a batch of 50 messages, you can choose to only process the first 10 of them and ignore the others.
 # This is helpful for games where too many inputs at once can actually hinder the gameplay.
 # Setting to ~50 is good for total chaos, ~5-10 is good for 2D platformers
-MAX_QUEUE_LENGTH = 20  
+MAX_QUEUE_LENGTH = 10  
 MAX_WORKERS = 100 # Maximum number of threads you can process at a time 
 
 last_time = time.time()
@@ -53,7 +53,7 @@ pyautogui.FAILSAFE = False
 ##########################################################
 
 # An optional count down before starting, so you have time to load up the game
-countdown = 10
+countdown = 5
 while countdown > 0:
     print(countdown)
     countdown -= 1
@@ -78,57 +78,41 @@ def handle_message(message):
         # I've added some example videogame logic code below:
 
         ###################################
-        # Example GTA V Code 
+        # Pokemon Emulator Code
         ###################################
 
         # If the chat message is "left", then hold down the left arrow key for 2 seconds
         if msg == "left": 
-            HoldAndReleaseKey(LEFT_ARROW, 0.5)
+            HoldAndReleaseKey(LEFT_ARROW, 0.2)
 
         # If the chat message is "right", then hold down the right arrow key for 2 seconds
         if msg == "right": 
-            HoldAndReleaseKey(RIGHT_ARROW, 0.5)
+            HoldAndReleaseKey(RIGHT_ARROW, 0.2)
 
         # If the chat message is "up", then hold down the up arrow key for 2 seconds
         if msg == "up": 
-            HoldAndReleaseKey(UP_ARROW, 0.5)
+            HoldAndReleaseKey(UP_ARROW, 0.2)
 
        # If the chat message is "down", then hold down the down arrow key for 2 seconds
         if msg == "down": 
-            HoldAndReleaseKey(DOWN_ARROW, 0.5)
-
-        # Release both the "up" and "down" keys
-        if msg == "stop": 
-            ReleaseKey(UP_ARROW) 
-            ReleaseKey(DOWN_ARROW)
+            HoldAndReleaseKey(DOWN_ARROW, 0.2)
 
         # If the chat message is "b", then hold down the Z arrow key for 1 seconds
         if msg == "b": 
-            HoldAndReleaseKey(Z, 1)
+            HoldAndReleaseKey(Z, 0.2)
             
         # If the chat message is "a", then hold down the X arrow key for 1 seconds
         if msg == "a": 
-            HoldAndReleaseKey(X, 1)
+            HoldAndReleaseKey(X, 0.2)
 
         # If the chat message is "y", then hold down the A arrow key for 1 seconds
         if msg == "y": 
-            HoldAndReleaseKey(A, 1)
+            HoldAndReleaseKey(A, 0.2)
 
         # If the chat message is "x", then hold down the S arrow key for 1 seconds
         if msg == "x": 
-            HoldAndReleaseKey(S, 1)
+            HoldAndReleaseKey(S, 0.2)
 
-        # # Press the spacebar for 0.7 seconds
-        # if msg == "brake": 
-        #     HoldAndReleaseKey(SPACE, 0.7)
-
-        # # Press the left mouse button down for 1 second, then release it
-        # if msg == "shoot": 
-        #     pydirectinput.mouseDown(button="left")
-        #     time.sleep(1)
-        #     pydirectinput.mouseUp(button="left")
-
-        ####################################
         ####################################
 
     except Exception as e:
