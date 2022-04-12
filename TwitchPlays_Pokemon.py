@@ -17,7 +17,7 @@
 
 ##########################################################
 
-TWITCH_CHANNEL = 'fireblazer93' # Replace this with your Twitch username. Must be all lowercase.
+TWITCH_CHANNEL = 'YOUR_TWITCH_USERNAME' # Replace this with your Twitch username. Must be all lowercase.
 
 ##########################################################
 
