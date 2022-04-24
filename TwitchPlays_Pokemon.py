@@ -81,35 +81,51 @@ def handle_message(message):
         # Pokemon Emulator Code
         ###################################
 
-        # If the chat message is "left", then hold down the left arrow key for 2 seconds
+        # If the chat message is "left", then hold down the left arrow key for .2 seconds
         if msg == "left": 
             HoldAndReleaseKey(LEFT_ARROW, 0.2)
 
-        # If the chat message is "right", then hold down the right arrow key for 2 seconds
+        # If the chat message is "right", then hold down the right arrow key for .2 seconds
         if msg == "right": 
             HoldAndReleaseKey(RIGHT_ARROW, 0.2)
 
-        # If the chat message is "up", then hold down the up arrow key for 2 seconds
+        # If the chat message is "up", then hold down the up arrow key for .2 seconds
         if msg == "up": 
             HoldAndReleaseKey(UP_ARROW, 0.2)
 
-       # If the chat message is "down", then hold down the down arrow key for 2 seconds
+       # If the chat message is "down", then hold down the down arrow key for .2 seconds
         if msg == "down": 
             HoldAndReleaseKey(DOWN_ARROW, 0.2)
 
-        # If the chat message is "b", then hold down the Z arrow key for 1 seconds
+        # If the chat message is "walk left", then hold down the left arrow key for 2 seconds
+        if msg == "walk left": 
+            HoldAndReleaseKey(LEFT_ARROW, 2)
+
+        # If the chat message is "walk right", then hold down the right arrow key for 2 seconds
+        if msg == "walk right": 
+            HoldAndReleaseKey(RIGHT_ARROW, 2)
+
+        # If the chat message is "walk up", then hold down the up arrow key for 2 seconds
+        if msg == "walk up": 
+            HoldAndReleaseKey(UP_ARROW, 2)
+
+       # If the chat message is "walk down", then hold down the down arrow key for 2 seconds
+        if msg == "walk down": 
+            HoldAndReleaseKey(DOWN_ARROW, 2)
+
+        # If the chat message is "b", then hold down the Z arrow key for 0.2 seconds
         if msg == "b": 
             HoldAndReleaseKey(Z, 0.2)
             
-        # If the chat message is "a", then hold down the X arrow key for 1 seconds
+        # If the chat message is "a", then hold down the X arrow key for 0.2 seconds
         if msg == "a": 
             HoldAndReleaseKey(X, 0.2)
 
-        # If the chat message is "y", then hold down the A arrow key for 1 seconds
+        # If the chat message is "y", then hold down the A arrow key for 0.2 seconds
         if msg == "y": 
             HoldAndReleaseKey(A, 0.2)
 
-        # If the chat message is "x", then hold down the S arrow key for 1 seconds
+        # If the chat message is "x", then hold down the S arrow key for 0.2 seconds
         if msg == "x": 
             HoldAndReleaseKey(S, 0.2)
 
