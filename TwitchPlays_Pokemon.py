@@ -82,27 +82,27 @@ def handle_message(message):
         ###################################
 
         # If the chat message is "left", then hold down the left arrow key for .2 seconds
-        if msg == "left": 
+        if msg == "left" or msg == "l": 
             HoldAndReleaseKey(LEFT_ARROW, 0.2)
 
         # If the chat message is "right", then hold down the right arrow key for .2 seconds
-        if msg == "right": 
+        if msg == "right" or msg == "r":
             HoldAndReleaseKey(RIGHT_ARROW, 0.2)
 
         # If the chat message is "up", then hold down the up arrow key for .2 seconds
-        if msg == "up": 
+        if msg == "up" or msg == "u": 
             HoldAndReleaseKey(UP_ARROW, 0.2)
 
        # If the chat message is "down", then hold down the down arrow key for .2 seconds
-        if msg == "down": 
+        if msg == "down" or msg == "d": 
             HoldAndReleaseKey(DOWN_ARROW, 0.2)
 
         # If the chat message is "walk left", then hold down the left arrow key for 2 seconds
-        if msg == "walk left": 
+        if msg == "walk left" or msg == "w l":
             HoldAndReleaseKey(LEFT_ARROW, 2)
 
         # If the chat message is "walk right", then hold down the right arrow key for 2 seconds
-        if msg == "walk right": 
+        if msg == "walk right" or msg == "w r": 
             HoldAndReleaseKey(RIGHT_ARROW, 2)
 
         # If the chat message is "walk up", then hold down the up arrow key for 2 seconds
@@ -110,7 +110,7 @@ def handle_message(message):
             HoldAndReleaseKey(UP_ARROW, 2)
 
        # If the chat message is "walk down", then hold down the down arrow key for 2 seconds
-        if msg == "walk down": 
+        if msg == "walk down" or msg == "w d": 
             HoldAndReleaseKey(DOWN_ARROW, 2)
 
         # If the chat message is "b", then hold down the Z arrow key for 0.2 seconds
